@@ -13,7 +13,7 @@ public class FirstController {
 //        return "greetings";
 //    }
 
-    @GetMapping("/hi_juheun")
+    @GetMapping("/hijuheun")
     public String niceToMeetYou(Model model) {
         //addAttribute("변수명", "변숫값")
         model.addAttribute("username", "juheun");
