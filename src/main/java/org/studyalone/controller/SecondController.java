@@ -10,10 +10,10 @@ public class SecondController {
     @GetMapping("/quote")
     public String randomQuote(Model model){
         String[] quotes={
-                "행복은 습관이다. 그것을 몸에 지니라. " + "-하버드",
-                "고개 숙이지 마십시오. 세상을 똑바로 정면으로" + "-헬렌 켈러",
-                "작은 기회로부터 종종 위대한 업적이 시작된다." + "-데모스테네스",
-                "나는 생각한다 고로 존재한다." + "-데카르트"
+                "행복은 습관이다. 그것을 몸에 지니라. " + "- 심주흔",
+                "고개 숙이지 마십시오. 세상을 똑바로 정면으로" + "- 심주흔",
+                "작은 기회로부터 종종 위대한 업적이 시작된다." + "- 심주흔",
+                "나는 생각한다 고로 존재한다." + "- 심주흔"
         };
 
         int randInt = (int) (Math.random() * quotes.length);
