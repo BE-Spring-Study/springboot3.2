@@ -41,7 +41,12 @@ public class ArticleController {
         //System.out.println(saved.toString());
         log.info(form.toString());
 
-        return ""; //빈칸
+        //기본 빈칸
+        //return "";
+
+        //리다이렉션을 원할경우
+        return "redirect:/articles/" + saved.getID();
+
     }
 
     @GetMapping("/articles/{id}")

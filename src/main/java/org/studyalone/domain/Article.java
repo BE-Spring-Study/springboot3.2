@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.hibernate.sql.exec.spi.StandardEntityInstanceResolver;
@@ -14,6 +15,7 @@ import org.hibernate.sql.exec.spi.StandardEntityInstanceResolver;
 @AllArgsConstructor     //생성자를 대체하는 어노테이션 / 롬복 추가
 @NoArgsConstructor
 @ToString
+//@Getter
 public class Article {
 
     @Id
@@ -24,6 +26,10 @@ public class Article {
     private String title;
     @Column
     private String content;
+
+    public Long getID() {
+        return id;
+    }
 
 
     //마우스 오른쪽 클릭 > Generate -> Constructor == 생성자 자동추가
