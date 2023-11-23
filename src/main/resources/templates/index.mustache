@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+<!--<form action="/counts/displayCount" method="get">-->
+    <h1>Count: {{clickCount}}</h1>
+    <div id="jsonDataDisplay"></div>
+
+<div id="dataDisplay">
+    <!-- 서버에서 반환된 데이터가 여기에 표시될 것입니다. -->
+</div>
+    <h1>클릭 수: <span id="clickCountDisplay"></span></h1>
+    <h1>클릭 수: <span id="clickCount"></span></h1>
+    <img id="spy" src="/counts/image.png"/>
+<!--</form>-->
+<script src="/counts/app.js"></script>
+</body>
+</html>
