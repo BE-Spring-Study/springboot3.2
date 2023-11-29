@@ -27,9 +27,12 @@ public class Article {
     @Column
     private String content;
 
-    public Long getID() {
+    public Long getId() {
         return id;
     }
+
+//    public String getId() {
+//    }
 
 
     //마우스 오른쪽 클릭 > Generate -> Constructor == 생성자 자동추가
