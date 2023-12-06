@@ -1,10 +1,7 @@
 package org.studyalone.domain;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,7 +16,7 @@ import org.hibernate.sql.exec.spi.StandardEntityInstanceResolver;
 public class Article {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //DB가 id 자동생성
     private Long id;
 
     @Column
@@ -31,6 +28,14 @@ public class Article {
         return id;
     }
 
+    public void patch(Article article) {
+        if (article.title != null)
+            this.title = article.title;
+        if (article.title != null)
+            this.title = article.content;
+    }
+
+    // 어노테이션 추가
 //    public String getId() {
 //    }
 
