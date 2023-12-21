@@ -12,7 +12,7 @@ import org.hibernate.sql.exec.spi.StandardEntityInstanceResolver;
 @AllArgsConstructor     //생성자를 대체하는 어노테이션 / 롬복 추가
 @NoArgsConstructor
 @ToString
-//@Getter
+@Getter
 public class Article {
 
     @Id
