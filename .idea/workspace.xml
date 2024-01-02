@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8efe98f5-c75e-4f87-8caf-88093384dcca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8efe98f5-c75e-4f87-8caf-88093384dcca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,7 +94,20 @@
       <recent name="org.studyalone.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ArticleServiceTest">
+  <component name="RunManager" selected="Application.FirstprojectApplication">
+    <configuration name="FirstprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.studyalone.FirstprojectApplication" />
+      <module name="springboot3-2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.studyalone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -237,6 +248,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FirstprojectApplication" />
         <item itemvalue="Gradle.ArticleServiceTest" />
         <item itemvalue="Gradle.ArticleServiceTest.index" />
         <item itemvalue="Gradle.ArticleServiceTest.create_성공" />
