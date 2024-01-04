@@ -51,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,29 +97,19 @@
       <recent name="org.studyalone.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CommentRepositoryTest">
-    <configuration name="ArticleServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.studyalone.service.ArticleServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.FirstprojectApplication">
+    <configuration name="FirstprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.studyalone.FirstprojectApplication" />
+      <module name="springboot3-2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.studyalone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ArticleServiceTest.create_실패" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -238,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FirstprojectApplication" />
         <item itemvalue="Gradle.CommentRepositoryTest" />
         <item itemvalue="Gradle.CommentRepositoryTest.findByNickname (1)" />
         <item itemvalue="Gradle.CommentRepositoryTest.findByArticleId (1)" />
         <item itemvalue="Gradle.ArticleServiceTest.create_실패" />
-        <item itemvalue="Gradle.ArticleServiceTest" />
       </list>
     </recent_temporary>
   </component>
