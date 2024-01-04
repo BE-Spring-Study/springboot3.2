@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.studyalone.repository.CommentRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-03T06:37:29" hostname="simjuheun-ui-MacBookAir.local" time="0.942">
+<testsuite name="org.studyalone.repository.CommentRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-04T04:46:17" hostname="simjuheun-ui-MacBookAir.local" time="1.457">
   <properties/>
-  <testcase name="특정 닉네임의 모든 댓글 조회" classname="org.studyalone.repository.CommentRepositoryTest" time="0.942"/>
-  <system-out><![CDATA[15:37:19.245 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.studyalone.repository.CommentRepositoryTest]: CommentRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:37:19.506 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.studyalone.FirstprojectApplication for test class org.studyalone.repository.CommentRepositoryTest
+  <testcase name="특정 닉네임의 모든 댓글 조회" classname="org.studyalone.repository.CommentRepositoryTest" time="1.299"/>
+  <testcase name="특정 게시글의 모든 댓글 조회" classname="org.studyalone.repository.CommentRepositoryTest" time="0.154"/>
+  <system-out><![CDATA[13:46:10.236 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.studyalone.repository.CommentRepositoryTest]: CommentRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:46:10.564 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.studyalone.FirstprojectApplication for test class org.studyalone.repository.CommentRepositoryTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,33 +14,33 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.0)
 
-2024-01-03T15:37:20.787+09:00  INFO 4187 --- [    Test worker] o.s.repository.CommentRepositoryTest     : Starting CommentRepositoryTest using Java 17.0.6 with PID 4187 (started by simjuheun in /Users/simjuheun/Desktop/springboot3-2/springboot3.2)
-2024-01-03T15:37:20.790+09:00  INFO 4187 --- [    Test worker] o.s.repository.CommentRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
-2024-01-03T15:37:22.369+09:00  INFO 4187 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-03T15:37:22.597+09:00  INFO 4187 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 3 JPA repository interfaces.
-2024-01-03T15:37:22.886+09:00  INFO 4187 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2024-01-03T15:37:23.510+09:00  INFO 4187 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:51f031bd-40be-4a8f-877c-8c060dc2de3f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2024-01-03T15:37:24.702+09:00  INFO 4187 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-03T15:37:24.841+09:00  INFO 4187 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
-2024-01-03T15:37:24.846+09:00  INFO 4187 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-01-03T15:37:26.441+09:00  INFO 4187 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2024-01-03T15:37:26.671+09:00  INFO 4187 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-03T15:37:26.765+09:00  INFO 4187 --- [    Test worker] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2024-01-03T15:37:27.192+09:00  INFO 4187 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2024-01-03T15:37:28.241+09:00  INFO 4187 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-01-03T15:37:28.282+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:11.429+09:00  INFO 10984 --- [    Test worker] o.s.repository.CommentRepositoryTest     : Starting CommentRepositoryTest using Java 17.0.6 with PID 10984 (started by simjuheun in /Users/simjuheun/Desktop/springboot3-2/springboot3.2)
+2024-01-04T13:46:11.433+09:00  INFO 10984 --- [    Test worker] o.s.repository.CommentRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2024-01-04T13:46:12.388+09:00  INFO 10984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-04T13:46:12.493+09:00  INFO 10984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2024-01-04T13:46:12.626+09:00  INFO 10984 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-01-04T13:46:12.943+09:00  INFO 10984 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:430b6faa-052e-4694-8beb-adf6ef4fa0d2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-01-04T13:46:13.506+09:00  INFO 10984 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-04T13:46:13.617+09:00  INFO 10984 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-01-04T13:46:13.622+09:00  INFO 10984 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-04T13:46:15.022+09:00  INFO 10984 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-04T13:46:15.248+09:00  INFO 10984 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-04T13:46:15.371+09:00  INFO 10984 --- [    Test worker] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2024-01-04T13:46:15.672+09:00  INFO 10984 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-01-04T13:46:16.685+09:00  INFO 10984 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-04T13:46:16.720+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists article cascade 
 Hibernate: 
     drop table if exists article cascade 
-2024-01-03T15:37:28.293+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.729+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists comment cascade 
 Hibernate: 
     drop table if exists comment cascade 
-2024-01-03T15:37:28.295+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.729+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists count cascade 
 Hibernate: 
     drop table if exists count cascade 
-2024-01-03T15:37:28.303+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.741+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     create table article (
         id bigint generated by default as identity,
         content varchar(255),
@@ -53,7 +54,7 @@ Hibernate:
         title varchar(255),
         primary key (id)
     )
-2024-01-03T15:37:28.326+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.767+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     create table comment (
         article_id bigint,
         id bigint generated by default as identity,
@@ -69,7 +70,7 @@ Hibernate:
         nickname varchar(255),
         primary key (id)
     )
-2024-01-03T15:37:28.334+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.771+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     create table count (
         num integer not null,
         id bigint generated by default as identity,
@@ -81,7 +82,7 @@ Hibernate:
         id bigint generated by default as identity,
         primary key (id)
     )
-2024-01-03T15:37:28.339+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.774+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists comment 
        add constraint FK5yx0uphgjc6ik6hb82kkw501y 
        foreign key (article_id) 
@@ -91,11 +92,11 @@ Hibernate:
        add constraint FK5yx0uphgjc6ik6hb82kkw501y 
        foreign key (article_id) 
        references article
-2024-01-03T15:37:28.373+09:00  INFO 4187 --- [    Test worker] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
-2024-01-03T15:37:28.380+09:00  INFO 4187 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-03T15:37:28.971+09:00  INFO 4187 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-01-03T15:37:29.337+09:00  INFO 4187 --- [    Test worker] o.s.repository.CommentRepositoryTest     : Started CommentRepositoryTest in 9.699 seconds (process running for 12.038)
-2024-01-03T15:37:30.156+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:16.837+09:00  INFO 10984 --- [    Test worker] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2024-01-04T13:46:16.857+09:00  INFO 10984 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-04T13:46:17.360+09:00  INFO 10984 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-04T13:46:17.723+09:00  INFO 10984 --- [    Test worker] o.s.repository.CommentRepositoryTest     : Started CommentRepositoryTest in 6.991 seconds (process running for 9.728)
+2024-01-04T13:46:18.625+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     SELECT
         * 
     FROM
@@ -109,7 +110,7 @@ Hibernate:
         comment 
     WHERE
         nickname = ?                      
-2024-01-03T15:37:30.221+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:18.735+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.content,
@@ -127,7 +128,7 @@ Hibernate:
         article a1_0 
     where
         a1_0.id=?
-2024-01-03T15:37:30.250+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:18.829+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.content,
@@ -145,7 +146,7 @@ Hibernate:
         article a1_0 
     where
         a1_0.id=?
-2024-01-03T15:37:30.253+09:00 DEBUG 4187 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-04T13:46:18.844+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.content,
@@ -163,6 +164,52 @@ Hibernate:
         article a1_0 
     where
         a1_0.id=?
+2024-01-04T13:46:19.061+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
+    SELECT
+        * 
+    FROM
+        comment 
+    WHERE
+        article_id = ?
+Hibernate: 
+    SELECT
+        * 
+    FROM
+        comment 
+    WHERE
+        article_id = ?
+2024-01-04T13:46:19.071+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+2024-01-04T13:46:19.170+09:00 DEBUG 10984 --- [    Test worker] org.hibernate.SQL                        : 
+    SELECT
+        * 
+    FROM
+        comment 
+    WHERE
+        article_id = ?
+Hibernate: 
+    SELECT
+        * 
+    FROM
+        comment 
+    WHERE
+        article_id = ?
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
