@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.studyalone.domain.Article;
 import org.studyalone.dto.ArticleForm;
+import org.studyalone.dto.CommentDto;
 import org.studyalone.repository.ArticleRepository;
+import org.studyalone.service.ArticleService;
+import org.studyalone.service.CommentService;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +24,8 @@ import java.util.Optional;
 public class ArticleController {
     @Autowired
     private ArticleRepository articleRepository;
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/articles/new")
         public String newArticleForm(){
@@ -56,9 +61,11 @@ public class ArticleController {
 
         // 1. id를 조회해 데이터 가져오기
         Article articleEntity = articleRepository.findById(id).orElse(null);
+        List<CommentDto> commentDtos = commentService.comments(id);
 
         // 2. 모델에 데이터 등록하기
         model.addAttribute("article", articleEntity);
+        model.addAttribute("commentDtos", commentDtos);
         // 3. 뷰 페이지 변환하기
         return "articles/show";
     }

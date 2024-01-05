@@ -28,6 +28,7 @@ public class Comment {
     private String body;
 
 
+    //page 472
     public static Comment createComment(CommentDto dto, Article article) {
         //예외발생
         if (dto.getId() != null)
